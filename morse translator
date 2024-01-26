@@ -1,0 +1,42 @@
+def morse_translator(text):
+   
+    morse_code_dict = {
+        "A": ".-",
+        "B": "-...",
+        "C": "-.-.",
+        "D": "-..",
+        "E": ".",
+        "F": "..-.",
+        "G": "--.",
+        "H": "....",
+        "I": "..",
+        "J": ".---",
+        "K": "-.-",
+        "L": ".-..",
+        "M": "--",
+        "N": "-.",
+        "O": "---",
+        "P": ".--.",
+        "Q": "--.-",
+        "R": ".-.",
+        "S": "...",
+        "T": "-",
+        "U": "..-",
+        "V": "...-",
+        "W": ".--",
+        "X": "-..-",
+        "Y": "-.--",
+        "Z": "--..",
+    }
+
+   
+    translated_morse = []
+
+   
+    for char in text.upper():  
+        if char.isalpha():  
+            translated_morse.append(morse_code_dict[char]) 
+        elif char == ' ': 
+            translated_morse.append('/') 
+
+    return ' '.join(translated_morse)
