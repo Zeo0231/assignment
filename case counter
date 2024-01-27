@@ -1,0 +1,16 @@
+def case_counter(text):
+    # Initializing counters for uppercase and lowercase letters
+    uppercase_count = 0
+    lowercase_count = 0
+
+    # Iterating through each character in the text
+    for char in text:
+        if char.isupper():  # Check if the character is an uppercase letter
+            uppercase_count += 1
+        elif char.islower():  # Check if the character is a lowercase letter
+            lowercase_count += 1
+
+    # Printing the counts
+    print("Uppercase letters:", uppercase_count)
+    print("Lowercase letters:", lowercase_count)
+
