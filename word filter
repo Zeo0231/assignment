@@ -1,0 +1,13 @@
+import re
+
+def word_filter_counter(text, filter_words):
+    
+    filter_words = [word.lower() for word in filter_words]
+
+   
+    words = re.findall(r'\b\w+\b', text.lower())
+
+   
+    word_count = {word: words.count(word) for word in filter_words if word in words}
+
+    return word_count
