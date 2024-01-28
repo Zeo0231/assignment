@@ -1,8 +1,8 @@
 def speeding_ticket(speed, is_birthday):
-    # Adjust speed limits for birthday
+  
     speed_adjustment = 5 if is_birthday else 0
 
-    # Determine ticket type based on speed
+  
     if speed <= 60 + speed_adjustment:
         return "No Ticket"
     elif 61 <= speed <= 80 + speed_adjustment:
